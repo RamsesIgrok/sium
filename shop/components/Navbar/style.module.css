@@ -1,0 +1,106 @@
+.main {
+    background-color: #333;
+    width: 100%; 
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.right {
+    height: 100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.pulsante {
+    background-color: #333;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.pulsante:hover {
+    transition: all 0.9s ease-out;
+    background-color: black;
+    cursor: pointer;
+
+}
+.rightmobile {
+    display: none;
+}
+
+.menumobile {
+    display: none;
+}
+
+.disattivato {
+    display: none;
+}
+
+.stemma{
+    width: 50px;
+    padding-left: 10px;
+}
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;  
+}
+/*-----------------------
+Smartphone
+-----------------------*/
+@media (max-width: 760px) {
+    .right {
+        display: none;
+    }
+
+    .rightmobile {
+        display: flex;
+        background-color: #333;
+        width: 70px;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .menumobile {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        z-index: 1;
+        animation:ease;
+    }
+
+    .pulsantemobile {
+        background-color: #333;
+        display: flex;
+        align-items: center;
+        padding:20px;
+        color: #fff;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .pulsantemobile:hover {
+        transition: all 0.9s ease-out;
+        background-color: black;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,64 @@
+.body{
+    background-image: url('../public/phone.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    color: white;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    position: absolute;
+    vertical-align: middle;
+    left: 50%;
+    margin-left: -73.21px;
+    margin-top: 280px;
+    font-weight:bold; 
+    z-index: 0;
+}
+
+.article{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    font-size: x-large;
+    margin-right: 470px;
+    margin-left: 470px;
+    margin-top: 330px;
+    border-radius: 90px;
+}
+
+.articleposition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    bottom:0;
+    margin-top: 349px;
+  }
+
+  @media (max-width: 760px){
+    .body{
+        height: 100%;
+        width: 100%;
+        background-position: center;
+    }
+    .article{
+        font-size: medium;
+        margin-right: 30px;
+        margin-left:30px;
+        margin-bottom: 216px;
+        padding: 25px;
+    }
+  }

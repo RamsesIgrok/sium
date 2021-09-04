@@ -1,0 +1,73 @@
+.body{
+    background-image: url('../public/sfondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    color: white;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    position: absolute;
+    vertical-align: middle;
+    left: 50%;
+    margin-left: -35px;
+    margin-top: 150px;
+    font-weight:bold; 
+    z-index: 0;
+}
+
+.article{
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: x-large;
+    margin-right: 270px;
+    margin-left: 270px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    border-radius: 90px;
+}
+
+.articleposition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    bottom:0;
+  }
+  
+.fine{
+    margin-bottom: 25px;
+}
+
+.div{
+    margin-top: 25px;
+}
+
+  @media (max-width: 760px){
+    .body{
+        height: 100%;
+        width: 100%;
+        background-position: center;
+    }
+
+    .article{
+        font-size: medium;
+        margin: 30px;
+    }
+
+    .title{
+        color: transparent;
+    }
+  }
